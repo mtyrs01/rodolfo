@@ -3,42 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SISTEMA DE CONTROL | Rodolfo</title>
+    <title>Dashboard Financiero 2026 | Rodolfo</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .progress-segment { height: 100%; transition: width 0.5s ease; }
+    </style>
 </head>
-<body class="bg-black text-gray-100 font-sans p-6">
-    <div class="max-w-4xl mx-auto">
-        <header class="border-b border-gray-800 pb-6 mb-10">
-            <h1 class="text-3xl font-bold text-blue-500">CONTROL MAESTRO</h1>
-            <p class="text-gray-500">Selecciona el módulo de ingresos para gestionar</p>
+<body class="bg-black text-gray-100 font-sans p-4 md:p-8">
+    <div class="max-w-5xl mx-auto">
+        
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 border-b border-gray-800 pb-8">
+            <div>
+                <h1 class="text-4xl font-black tracking-tighter text-white">CONTROL <span class="text-blue-500">PRO</span></h1>
+                <p class="text-gray-500 uppercase text-xs tracking-widest mt-1">Plan de Financiamiento Anual 2026</p>
+            </div>
+            <div class="mt-4 md:mt-0 text-left md:text-right">
+                <p class="text-gray-500 text-[10px] uppercase">Balance Total Marzo</p>
+                <p class="text-3xl font-mono text-green-400">$0.00 <span class="text-sm text-gray-600">/ $20.00</span></p>
+            </div>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <a href="apps.html" class="bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-blue-500 transition-all text-center">
-                <div class="text-4xl mb-4 text-blue-500">🎮</div>
-                <h2 class="font-bold">Apps & Juegos</h2>
-                <p class="text-xs text-gray-500 mt-2 italic">Kotlin / Play Store</p>
-            </a>
-
-            <a href="contenido.html" class="bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-red-500 transition-all text-center">
-                <div class="text-4xl mb-4 text-red-500">🎬</div>
-                <h2 class="font-bold">Contenido Digital</h2>
-                <p class="text-xs text-gray-500 mt-2 italic">TikTok / FB / YT</p>
-            </a>
-
-            <a href="proyectos.html" class="bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-green-500 transition-all text-center">
-                <div class="text-4xl mb-4 text-green-500">💡</div>
-                <h2 class="font-bold">Nuevas Ideas</h2>
-                <p class="text-xs text-gray-500 mt-2 italic">Oportunidades 2026</p>
-            </a>
-        </div>
-
-        <div class="mt-12 bg-gray-900 p-6 rounded-3xl border border-blue-900/30">
-            <h3 class="text-sm font-bold uppercase text-blue-400 mb-4 tracking-widest text-center">Progreso Global Gemini Pro</h3>
-            <div class="w-full bg-gray-800 h-2 rounded-full overflow-hidden">
-                <div class="bg-blue-500 h-full" style="width: 10%"></div>
+        <section class="bg-gray-900 border border-gray-800 p-6 rounded-3xl mb-12 shadow-2xl">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-bold">Progreso de Pago: Marzo</h2>
+                <span class="text-sm font-bold text-blue-400">0%</span>
             </div>
-        </div>
-    </div>
-</body>
-</html>
+            
+            <div class="w-full bg-gray-800 h-6 rounded-full overflow-hidden flex">
+                <div class="progress-segment bg-blue-500" style="width: 0%" title="Apps"></div>
+                <div class="progress-segment bg-red-600" style="width: 0%" title="Contenido"></div>
+                <div class="progress-segment bg-green-500" style="width: 0%" title="Nuevos Proyectos"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 mt-4 text-[10px] uppercase font-bold text-center">
+                <div class="text-blue-400">● Apps (0%)</div>
+                <div class="text-red-500">● Contenido (0%)</div>
+                <div class="text-green-500">● Proyectos (0%)</div>
+            </div>
+        </section>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <a href="apps.html" class="group bg-gray-900/50 p-6 rounded-2xl border border-gray-800 hover:bg-blue-900/10 transition-all">
