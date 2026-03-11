@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Financiero 2026 | Rodolfo</title>
+    <title>Dashboard Maestro | Rodolfo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .progress-segment { height: 100%; transition: width 0.5s ease; }
@@ -12,78 +12,82 @@
 <body class="bg-black text-gray-100 font-sans p-4 md:p-8">
     <div class="max-w-5xl mx-auto">
         
-        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 border-b border-gray-800 pb-8">
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b border-gray-800 pb-6">
             <div>
-                <h1 class="text-4xl font-black tracking-tighter text-white">CONTROL <span class="text-blue-500">PRO</span></h1>
-                <p class="text-gray-500 uppercase text-xs tracking-widest mt-1">Plan de Financiamiento Anual 2026</p>
+                <h1 class="text-3xl font-black tracking-tighter text-white uppercase">Sistema <span class="text-blue-500">Rodolfo</span></h1>
+                <p class="text-gray-500 text-[10px] tracking-[0.2em]">CONTROL FINANCIERO ANUAL 2026</p>
             </div>
-            <div class="mt-4 md:mt-0 text-left md:text-right">
-                <p class="text-gray-500 text-[10px] uppercase">Balance Total Marzo</p>
-                <p class="text-3xl font-mono text-green-400">$0.00 <span class="text-sm text-gray-600">/ $20.00</span></p>
+            <div class="mt-4 md:mt-0 bg-gray-900 border border-gray-800 p-4 rounded-2xl min-w-[200px]">
+                <p class="text-gray-500 text-[10px] uppercase font-bold">Balance Global Marzo</p>
+                <p class="text-2xl font-mono text-green-400">$0.00 <span class="text-xs text-gray-600">/ $20.00</span></p>
             </div>
         </header>
 
-        <section class="bg-gray-900 border border-gray-800 p-6 rounded-3xl mb-12 shadow-2xl">
+        <section class="bg-gray-900 border border-gray-800 p-6 rounded-3xl mb-8">
             <div class="flex justify-between items-center mb-4">
-                <h2 class="text-lg font-bold">Progreso de Pago: Marzo</h2>
-                <span class="text-sm font-bold text-blue-400">0%</span>
+                <h2 class="text-sm font-bold uppercase tracking-widest text-blue-400">Progreso de Pago Gemini Pro</h2>
+                <span class="text-xs font-mono">MARZO 2026</span>
             </div>
             
-            <div class="w-full bg-gray-800 h-6 rounded-full overflow-hidden flex">
-                <div class="progress-segment bg-blue-500" style="width: 0%" title="Apps"></div>
-                <div class="progress-segment bg-red-600" style="width: 0%" title="Contenido"></div>
-                <div class="progress-segment bg-green-500" style="width: 0%" title="Nuevos Proyectos"></div>
+            <div class="w-full bg-gray-800 h-8 rounded-xl overflow-hidden flex border border-gray-700">
+                <div class="progress-segment bg-blue-500" style="width: 5%" title="Apps"></div>
+                <div class="progress-segment bg-red-600" style="width: 5%" title="Contenido"></div>
+                <div class="progress-segment bg-green-500" style="width: 5%" title="Proyectos"></div>
             </div>
 
-            <div class="grid grid-cols-3 gap-2 mt-4 text-[10px] uppercase font-bold text-center">
-                <div class="text-blue-400">● Apps (0%)</div>
-                <div class="text-red-500">● Contenido (0%)</div>
-                <div class="text-green-500">● Proyectos (0%)</div>
+            <div class="grid grid-cols-3 gap-2 mt-4 text-[10px] uppercase font-black text-center">
+                <div class="text-blue-400">🎮 Apps</div>
+                <div class="text-red-500">🎬 Contenido</div>
+                <div class="text-green-500">💡 Proyectos</div>
             </div>
         </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <a href="apps.html" class="group bg-gray-900/50 p-6 rounded-2xl border border-gray-800 hover:bg-blue-900/10 transition-all">
-                <h3 class="text-blue-500 font-bold mb-1">Módulo Apps</h3>
-                <p class="text-xs text-gray-500">Gestionar Kotlin y Juegos</p>
+        <h3 class="text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-4 px-2">Gestionar Fuentes de Ingreso</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            
+            <a href="apps.html" class="group bg-gray-900 border border-gray-800 p-6 rounded-2xl hover:border-blue-500 transition-all">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-3xl">🎮</span>
+                    <span class="text-blue-500 group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <h3 class="font-bold text-lg">Apps & Juegos</h3>
+                <p class="text-xs text-gray-500 mt-1">Control de Kotlin y Play Store</p>
             </a>
-            <a href="contenido.html" class="group bg-gray-900/50 p-6 rounded-2xl border border-gray-800 hover:bg-red-900/10 transition-all">
-                <h3 class="text-red-600 font-bold mb-1">Módulo Contenido</h3>
-                <p class="text-xs text-gray-500">TikTok, FB y Youtube</p>
+
+            <a href="contenido.html" class="group bg-gray-900 border border-gray-800 p-6 rounded-2xl hover:border-red-600 transition-all">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-3xl">🎬</span>
+                    <span class="text-red-600 group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <h3 class="font-bold text-lg">Contenido Digital</h3>
+                <p class="text-xs text-gray-500 mt-1">TikTok, FB Reels y Youtube</p>
             </a>
-            <a href="proyectos.html" class="group bg-gray-900/50 p-6 rounded-2xl border border-gray-800 hover:bg-green-900/10 transition-all">
-                <h3 class="text-green-500 font-bold mb-1">Módulo Proyectos</h3>
-                <p class="text-xs text-gray-500">Ideas y Ventas Digitales</p>
+
+            <a href="proyectos.html" class="group bg-gray-900 border border-gray-800 p-6 rounded-2xl hover:border-green-500 transition-all">
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-3xl">💡</span>
+                    <span class="text-green-500 group-hover:translate-x-1 transition-transform">→</span>
+                </div>
+                <h3 class="font-bold text-lg">Nuevos Proyectos</h3>
+                <p class="text-xs text-gray-500 mt-1">Ventas Digitales e Ideas</p>
             </a>
         </div>
 
-        <h3 class="text-gray-500 text-xs font-bold uppercase tracking-widest mb-4 px-2">Estatus de Suscripción 2026</h3>
-        <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
-            <div class="bg-gray-800/30 p-3 rounded-xl border border-gray-800 text-center opacity-40">
-                <p class="text-[10px]">ENE</p>
-                <p class="text-xs">🚫</p>
-            </div>
-            <div class="bg-gray-800/30 p-3 rounded-xl border border-gray-800 text-center opacity-40">
-                <p class="text-[10px]">FEB</p>
-                <p class="text-xs">🚫</p>
-            </div>
-            <div class="bg-blue-900/20 p-3 rounded-xl border border-blue-500 text-center">
-                <p class="text-[10px] text-blue-400 font-bold">MAR</p>
-                <p class="text-[10px] text-white">EN CURSO</p>
-            </div>
-            <div class="bg-gray-900 p-3 rounded-xl border border-gray-800 text-center">
-                <p class="text-[10px] text-gray-600">ABR</p>
-                <p class="text-[10px] text-gray-700">WAIT</p>
-            </div>
-            <div class="bg-gray-900 p-3 rounded-xl border border-gray-800 text-center">
-                <p class="text-[10px] text-gray-600">MAY</p>
-                <p class="text-[10px] text-gray-700">WAIT</p>
-            </div>
-            <div class="bg-gray-900 p-3 rounded-xl border border-gray-800 text-center">
-                <p class="text-[10px] text-gray-600">JUN</p>
-                <p class="text-[10px] text-gray-700">WAIT</p>
-            </div>
-            </div>
+        <h3 class="text-gray-500 text-[10px] font-bold uppercase tracking-widest mb-4 px-2">Historial de Suscripción 2026</h3>
+        <div class="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-12 gap-2">
+            <div class="bg-gray-900/30 border border-gray-800 p-2 rounded-lg text-center opacity-30 text-[9px]">ENE</div>
+            <div class="bg-gray-900/30 border border-gray-800 p-2 rounded-lg text-center opacity-30 text-[9px]">FEB</div>
+            <div class="bg-blue-900/30 border border-blue-500 p-2 rounded-lg text-center text-[9px] font-bold text-blue-400">MAR</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">ABR</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">MAY</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">JUN</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">JUL</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">AGO</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">SEP</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">OCT</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">NOV</div>
+            <div class="bg-gray-900 border border-gray-800 p-2 rounded-lg text-center text-[9px] text-gray-600">DIC</div>
+        </div>
 
     </div>
 </body>
